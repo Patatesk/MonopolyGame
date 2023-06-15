@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Flexalon 3D Layouts</title>
+		<link rel="icon" href="../\/static\/favicon.svg" />
+		<link rel="icon" href="../favicon.ico" />
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+		<meta http-equiv="content-security-policy" content=""><title>Flexalon Docs: Grid Layout</title>
+	<link href="../_app/immutable/assets/__layout-c86946ed.css" rel="stylesheet">
+	<link href="../_app/immutable/assets/docsPage-367d98a5.css" rel="stylesheet">
+	<link rel="modulepreload" href="/_app/immutable/start-d6e93fd0.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/index-43c8d661.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/index-eed282ab.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/__layout.svelte-b9493a38.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/docs/gridLayout.svelte-e20918b1.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/docsPage-58c34120.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/page-532517fa.js">
+	</head>
+	<body>
+		<div>
+
+
+
+
+<div class="inline-flex items-center bg-black flex-col w-full min-h-screen"><div class="flex w-full justify-center items-start fixed bg-black z-20 p-4 pr-10 pl-8 shadow-lg shadow-[#21a6f088]"><div class="flex w-full max-w-[1600px] justify-between items-center"><a href="/"><img src="../\/static\/flexalon-logo.png" class="w-[200px]" alt="Logo"></a>
+            <div class="inline-flex gap-10 items-center relative"><a class="text-white text-lg font-bold" href="https://www.flexalon.com">Website</a></div></div></div>
+
+    <div class="pt-28 w-full h-full flex flex-col items-center"><div class="pl-10">
+        <div class="flex w-full max-w-[1600px] min-h-full text-zinc-400 relative"><div class="h-full pt-10 pb-36 fixed bg-black"><div class="flex flex-col w-[300px] gap-2 border-[#21a6f0] border-r-2 bg-black min-h-0 h-full overflow-auto"><b class="text-zinc-200">Getting Started</b>
+                        <a href="../docs.html" class="svelte-thsdwb">Installation</a>
+                        <a href="../docs/coreConcepts.html" class="svelte-thsdwb">Core Concepts</a>
+                        
+                        <a href="../docs/challenges.html" class="svelte-thsdwb">Challenges!</a>
+
+                        <a class="text-zinc-200 mt-5 font-bold svelte-thsdwb" href="../docs/flexalonObject.html">Flexalon Objects</a>
+                        <a href="../docs/flexalonObject.html#size" class="svelte-thsdwb">Width, Height, and Depth</a>
+                        <a href="../docs/flexalonObject.html#offset" class="svelte-thsdwb">Offset, Scale, and Rotation</a>
+                        <a href="../docs/flexalonObject.html#margins" class="svelte-thsdwb">Margins and Padding</a>
+
+                        <b class="text-zinc-200 mt-5">Layouts</b>
+                        <a href="../docs/flexibleLayout.html" class="svelte-thsdwb">Flexible Layout</a>
+                        <a href="../docs/gridLayout.html" class="svelte-thsdwb">Grid Layout</a>
+                        <a href="../docs/circleLayout.html" class="svelte-thsdwb">Circle / Spiral Layout</a>
+                        <a href="../docs/curveLayout.html" class="svelte-thsdwb">Curve Layout</a>
+                        <a href="../docs/randomLayout.html" class="svelte-thsdwb">Random Layout</a>
+                        <a href="../docs/alignLayout.html" class="svelte-thsdwb">Align Layout</a>
+                        <a href="../docs/shapeLayout.html" class="svelte-thsdwb">Shape Layout</a>
+                        <a href="../docs/constraints.html" class="svelte-thsdwb">Constraints</a>
+                        <a href="../docs/randomModifier.html" class="svelte-thsdwb">Random Modifier</a>
+
+                        <a class="text-zinc-200 mt-5 font-bold svelte-thsdwb" href="../docs/animators.html">Animators</a>
+                        <a href="../docs/animators.html#curve" class="svelte-thsdwb">Curve Animator</a>
+                        <a href="../docs/animators.html#lerp" class="svelte-thsdwb">Lerp Animator</a>
+                        <a href="../docs/animators.html#rb" class="svelte-thsdwb">Rigid Body Animator</a>
+                        <a href="../docs/animators.html#layouts" class="svelte-thsdwb">Animating Layouts</a>
+
+                        <b class="text-zinc-200 mt-5">Click &amp; Drag</b>
+                        <a href="../docs/interactable.html" class="svelte-thsdwb">Interactable</a>
+                        <a href="../docs/interactable.html#dragTarget" class="svelte-thsdwb">Drag Target</a>
+                        <a href="../docs/interactable.html#customInputProvider" class="svelte-thsdwb">Custom Input Provider</a>
+
+                        <b class="text-zinc-200 mt-5">Data Binding</b>
+                        <a href="../docs/cloner.html" class="svelte-thsdwb">Cloner</a>
+                        <a href="../docs/cloner.html#databinding" class="svelte-thsdwb">Data Binding</a>
+
+                        <b class="text-zinc-200 mt-5">API</b>
+                        <a href="../docs/pipeline.html" class="svelte-thsdwb">Flexalon Pipeline</a>
+                        <a href="../docs/customLayout.html" class="svelte-thsdwb">Custom Layouts</a>
+                        <a href="../docs/customAnimators.html" class="svelte-thsdwb">Custom Animators</a>
+                        <a href="../docs/adapters.html" class="svelte-thsdwb">Adapters</a>
+                        <div class="mb-20"></div></div></div>
+            <div class="flex flex-col w-full p-10 ml-[300px]"><div class="text-white text-2xl mb-10">Grid Layout</div>
+                <div class="doc svelte-thsdwb"><p>Use a grid layout to position children at fixed intervals.
+        Unlike a flexible layout, the sizes of children are not considered for layout.
+        Objects are placed in cells in column-row order. The size of the cells is determined by the size of the Flexalon Object Component.</p>
+    <div class="flex ml-10 m-5 mb-10"><img src="../\/static\/doc-grid.png" alt="Grid layout"></div>
+
+    <p class="text-xl mt-10">Grid Layout Options</p>
+    <div class="flex ml-10 m-5 mb-10"><img src="../\/static\/doc-grid-options.png" alt="Grid layout options"></div>
+    <table><tr><td>Cell Type</td>
+            <td>Rectangular or Hexagonal cells.</td></tr>
+        <tr><td>Columns</td>
+            <td>Number of columns.</td></tr>
+        <tr><td>Rows</td>
+            <td>Number of rows.</td></tr>
+        <tr><td>Column Direction</td>
+            <td>Axis to create columns and the direction to order child objects.</td></tr>
+        <tr><td>Row Direction</td>
+            <td>Axis to create rows and the direction to increment the rows when placing child objects.</td></tr>
+        <tr><td>Column Spacing</td>
+            <td>Adds empty space between columns.</td></tr>
+        <tr><td>Row Spacing</td>
+            <td>Adds empty space between rows.</td></tr>
+        <tr><td>Align</td>
+            <td>Aligns each item within its cell.</td></tr></table></div></div></div></div>
+        <div class="h-[200px] flex flex-col"><p class="text-gray-500 m-10">© 2022 Virtual Maker Corporation</p>
+
+                <div class="flex gap-5 align-center"><a href="https://twitter.com/virtualmakernet" target="_blank"><img class="w-10" src="../\/static\/twitter-circle-colored.png" alt="Twitter"></a>
+                    <a href="https://www.youtube.com/channel/UCHc3XG2yinIDN795hP541Ww" target="_blank"><img class="w-10" src="../\/static\/youtube-circle-colored.png" alt="YouTube"></a>
+                    <a href="https://www.instagram.com/alon_farchy/" target="_blank"><img class="w-10" src="../\/static\/instagram-circle-colored.png" alt="Instagram"></a>
+                    <a href="https://www.tiktok.com/@alon_farchy" target="_blank"><img class="w-10" src="../\/static\/tiktok-circle-colored.png" alt="Tiktok"></a>
+                    <a href="https://www.linkedin.com/company/84962951" target="_blank"><img class="w-10" src="../\/static\/linkedin-circle-colored.png" alt="Linkedin"></a>
+                    <a href="https://facebook.com/virtualmakernet" target="_blank"><img class="w-10" src="../\/static\/facebook-circle-colored.png" alt="Facebook"></a></div></div></div></div>
+
+
+		<script type="module" data-sveltekit-hydrate="tlll9f">
+		import { set_public_env, start } from "/_app/immutable/start-d6e93fd0.js";
+
+		set_public_env({});
+
+		start({
+			target: document.querySelector('[data-sveltekit-hydrate="tlll9f"]').parentNode,
+			paths: {"base":"","assets":""},
+			session: {},
+			route: true,
+			spa: false,
+			trailing_slash: "never",
+			hydrate: {
+				status: 200,
+				error: null,
+				nodes: [0, 15],
+				params: {},
+				routeId: "docs/gridLayout.html"
+			}
+		});
+	</script></div>
+	</body>
+</html>
