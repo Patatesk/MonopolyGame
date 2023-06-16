@@ -63,7 +63,7 @@ namespace PK
         {
             var loadedData = (SaveLevelData)state;
             level = loadedData._level;
-            if (level + 1 == SceneManager.GetActiveScene().buildIndex) return;
+            if (level == SceneManager.GetActiveScene().buildIndex) return;
             SceneManager.LoadScene(level+1);
         }
     }
